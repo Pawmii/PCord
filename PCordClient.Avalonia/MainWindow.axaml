@@ -1,0 +1,67 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="PCordClient.Avalonia.MainWindow"
+        Title="PCord" Width="1000" Height="700"
+        Background="#1E1E1E"
+        FontFamily="Segoe UI"
+        Foreground="White">
+    
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="240"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Background="#2D2D30" Padding="10">
+            <StackPanel>
+                <TextBlock Text="Никнейм:" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBox Name="NicknameBox" Height="30" Background="#3C3C3C" Foreground="White"
+                         BorderBrush="#444" BorderThickness="1" Margin="0,0,0,15"/>
+
+                <TextBlock Text="IP сервера:" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBox Name="ServerIpBox" Height="30" Background="#3C3C3C" Foreground="White"
+                         BorderBrush="#444" BorderThickness="1" Text="95.164.16.76:5000" Margin="0,0,0,15"/>
+                
+                <TextBlock Text="Пароль сервера (Опционально):" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBox Name="ServerPasswordBox" Height="30" Background="#3C3C3C" Foreground="White"
+                         BorderBrush="#444" BorderThickness="1" Text="" Margin="0,0,0,15"/>
+                
+                <Button Name="ConnectButton" Content="Подключиться" Height="30"
+                        Background="#007ACC" Foreground="White" BorderBrush="#005A9E"
+                        Click="ConnectButton_Click"/>
+
+                <Button Content="Очистить чат" Height="30" Margin="0,10,0,0"
+                        Background="#444" Foreground="White" BorderBrush="#333"
+                        Click="ClearMessages_Click"/>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Column="1" Margin="10,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+                <StackPanel Name="MessagesPanel" Margin="0,0,0,10"/>
+            </ScrollViewer>
+
+            <Border Grid.Row="1" Background="#2D2D30" Padding="10">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Name="MessageBox" Height="30" MinWidth="100"
+                             Background="#3C3C3C" Foreground="White" BorderBrush="#444"
+                             BorderThickness="1" Margin="0,0,10,0" VerticalContentAlignment="Center"
+                             KeyDown="MessageBox_KeyDown"/>
+
+                    <Button Content="Отправить" Width="100" Height="30" Margin="0,0,10,0"
+                            Background="#007ACC" Foreground="White" BorderBrush="#005A9E"
+                            Click="SendButton_Click"/>
+
+                    <Button Content="Отправить файл" Width="120" Height="30"
+                            Background="#007ACC" Foreground="White" BorderBrush="#005A9E"
+                            Click="SendFileButton_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCordServer", "PCordServer\PCordServer.csproj", "{27478B2F-73C9-4C46-AF60-64CEE4C999AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCordClient", "PCordClient\PCordClient.csproj", "{B1F8FED6-81FC-478E-BF96-55C9ADA73CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCordClient.Avalonia", "PCordClient.Avalonia\PCordClient.Avalonia.csproj", "{CC9BFBF5-627B-4F75-B6D1-5581BFC7089B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27478B2F-73C9-4C46-AF60-64CEE4C999AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27478B2F-73C9-4C46-AF60-64CEE4C999AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27478B2F-73C9-4C46-AF60-64CEE4C999AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27478B2F-73C9-4C46-AF60-64CEE4C999AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F8FED6-81FC-478E-BF96-55C9ADA73CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F8FED6-81FC-478E-BF96-55C9ADA73CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F8FED6-81FC-478E-BF96-55C9ADA73CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F8FED6-81FC-478E-BF96-55C9ADA73CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC9BFBF5-627B-4F75-B6D1-5581BFC7089B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC9BFBF5-627B-4F75-B6D1-5581BFC7089B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC9BFBF5-627B-4F75-B6D1-5581BFC7089B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC9BFBF5-627B-4F75-B6D1-5581BFC7089B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

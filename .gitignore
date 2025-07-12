@@ -1,0 +1,62 @@
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+*.pdb
+*.ilk
+*.obj/
+*.exe
+*.dll
+*.log
+*.vspscc
+*.vssscc
+TestResults/
+BuildResults/
+_ReSharper*/
+_ReSharper*/
+*.resharper.user
+*.DotSettings.user
+*.DotSettings
+
+# Build output
+bin/
+obj/
+out/
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# Rider caches
+.idea/
+.idea/*
+
+# DotCover
+*.dotCover
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userprefs
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Others
+*.log
+*.vsix
